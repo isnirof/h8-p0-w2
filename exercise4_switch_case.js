@@ -51,6 +51,8 @@ switch (bulan) {
   console.log(`${tanggal} Desember ${tahun}`);
   break;
   
+  default:
+  console.log('input bulan salah!');
 
 }
 
