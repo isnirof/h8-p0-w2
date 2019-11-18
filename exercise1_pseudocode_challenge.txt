@@ -1,0 +1,49 @@
+//1. Newton Second Law
+
+SET m WITH VALUE 600
+SET a WITH VALUE 2
+
+SET F WITH RESULT OF CALCULATE m*a
+DISPLAY F
+
+//2. Tahun Kabisat
+
+SET tahun WITH VALUE 1995
+
+IF (tahun MODULO 4 == 0 AND tahun MODULO 100 !=0)
+    DISPLAY "Tahun Kabisat"
+
+ELSE IF (tahun MODULO 4==0 && tahun MODULO 100==0 AND tahun MODULO 400==0)
+    DIPLAY "Tahun Kabisat"
+
+ELSE
+    DISPLAY "BUkan Tahun Kabisat"
+
+
+//3. Laundry Day 
+
+SET pakaian WITH VALUE 0
+
+WHILE pakaian<20
+    DISPLAY "Mesin belum penuh"
+    CALCULATE pakaian as pakaian+=1
+ENDWHILE
+
+DISPLAY "Mesin sudah penuh!Mari mencuci"
+
+
+//4. Periksa kuku
+
+SET murid WITH VALUE 1
+SET kuku WITH VALUE true //kuku pendek adalah true
+
+WHILE murid <=40
+    DISPLAY murid
+    IF kuku==true
+        DISPLAY "Puji Murid"
+    ELSE
+        DISPLAY "Hukum Murid"
+    ENDIF
+
+    murid ++
+ENDWHILE
