@@ -36,11 +36,11 @@ DISPLAY "Mesin sudah penuh!Mari mencuci"
 //4. Periksa kuku
 
 SET murid WITH VALUE 40
-SET kuku WITH VALUE 'pendek'
+SET kuku WITH VALUE "pendek"
 SET i WITH VALUE 0
 
 WHILE i < murid
-    IF kuku=='pendek'
+    IF kuku=="pendek"
         DISPLAY "Puji Murid"
     ELSE
         DISPLAY "Hukum Murid"
