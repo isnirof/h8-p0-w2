@@ -17,7 +17,7 @@ ELSE IF (tahun MODULO 4==0 && tahun MODULO 100==0 AND tahun MODULO 400==0)
     DIPLAY "Tahun Kabisat"
 
 ELSE
-    DISPLAY "BUkan Tahun Kabisat"
+    DISPLAY "Bukan Tahun Kabisat"
 
 
 //3. Laundry Day 
@@ -26,7 +26,8 @@ SET pakaian WITH VALUE 0
 
 WHILE pakaian<20
     DISPLAY "Mesin belum penuh"
-    CALCULATE pakaian as pakaian+=1
+    
+    INCREMENT pakaian
 ENDWHILE
 
 DISPLAY "Mesin sudah penuh!Mari mencuci"
@@ -34,16 +35,16 @@ DISPLAY "Mesin sudah penuh!Mari mencuci"
 
 //4. Periksa kuku
 
-SET murid WITH VALUE 1
-SET kuku WITH VALUE true //kuku pendek adalah true
+SET murid WITH VALUE 40
+SET kuku WITH VALUE 'pendek'
+SET i WITH VALUE 0
 
-WHILE murid <=40
-    DISPLAY murid
-    IF kuku==true
+WHILE i < murid
+    IF kuku=='pendek'
         DISPLAY "Puji Murid"
     ELSE
         DISPLAY "Hukum Murid"
     ENDIF
 
-    murid ++
+    INCREMENT i
 ENDWHILE
