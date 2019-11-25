@@ -10,15 +10,15 @@ DISPLAY F
 
 SET tahun WITH VALUE 1995
 
-IF (tahun MODULO 4 EQUAL TO 0) AND (tahun MODULO 100 NOT EQUAL TO 0)
+IF (tahun MODULO 4 EQUAL TO 0) AND (tahun MODULO 100 NOT EQUAL TO 0) THEN
     DISPLAY "Tahun Kabisat"
 
-ELSE IF (tahun MODULO 4 EQUAL TO 0) AND (tahun MODULO 100 EQUAL TO 0) AND (tahun MODULO 400 EQUAL TO 0)
+ELSE IF (tahun MODULO 4 EQUAL TO 0) AND (tahun MODULO 100 EQUAL TO 0) AND (tahun MODULO 400 EQUAL TO 0) THEN
     DIPLAY "Tahun Kabisat"
 
 ELSE
     DISPLAY "Bukan Tahun Kabisat"
-
+ENDIF
 
 //3. Laundry Day 
 
@@ -26,7 +26,6 @@ SET pakaian WITH VALUE 0
 
 WHILE pakaian<20
     DISPLAY "Mesin belum penuh"
-    
     INCREMENT pakaian
 ENDWHILE
 
@@ -40,10 +39,10 @@ SET kuku WITH VALUE "pendek"
 SET i WITH VALUE 0
 
 WHILE i < murid
-    IF kuku=="pendek"
+    IF kuku=="pendek" THEN
         DISPLAY "Puji Murid"
     ELSE
-        DISPLAY "Hukum Murid"
+        DISPLAY "Hukum Murid" THEN
     ENDIF
 
     INCREMENT i
