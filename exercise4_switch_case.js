@@ -52,7 +52,7 @@ switch (bulan) {
   break;
   
   default:
-  console.log('input bulan salah!');
+  console.log(`input bulan salah!`);
 
 }
 

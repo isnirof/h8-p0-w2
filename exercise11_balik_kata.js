@@ -1,10 +1,11 @@
 console.log('Logic Challenge - Balik Kata\n\n')
-function balikKata(kata) {
-  var hasil='';
-  for (var i=kata.length-1; i>=0; i--) {
-    hasil += kata[i];
+function balikKata(word) {
+  let result='';
+  for (let i=word.length-1; i>=0; i--) {
+    result += word[i];
   }
-  return hasil;
+
+  return result;
 }
 
 // TEST CASES

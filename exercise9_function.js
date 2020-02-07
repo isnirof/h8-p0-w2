@@ -2,7 +2,7 @@ console.log("Mengenal Penggunaan Function\n");
 
 console.log("Tugas 1");
 function shoutOut() {
-  console.log("Halo Function!");
+  return "Halo Function!"
 }
 
 console.log(shoutOut()) // Menampilkan "Halo Function!" di console
@@ -23,7 +23,7 @@ console.log(hasilPerkalian); // Menampilkan angka 30
 console.log("\n\nTugas 3");
 
 function processSentence(name,age,address,hobby) {
-  console.log(`Nama saya ${name}, umur saya ${age} tahun, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`)
+  return `Nama saya ${name}, umur saya ${age} tahun, alamat saya di ${address}, dan saya punya hobby yaitu ${hobby}!`
 }
 var name = "Agus";
 var age = 30;

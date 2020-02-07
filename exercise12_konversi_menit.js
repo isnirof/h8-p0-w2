@@ -1,15 +1,8 @@
 console.log('Logic Challenge - KOnversi Menit\n\n')
 function konversiMenit(menit) {
-  konvMenit= Math.floor(menit/60);
-  konvDetik=menit-(konvMenit*60);
-  
-  if(konvDetik<10) {
-    konvDetik='0'+konvDetik;
-  }
-  else {
-    konvDetik;
-  }
-  
+  konvMenit = Math.floor(menit / 60);
+  konvDetik = menit - (konvMenit * 60);
+  konvDetik = konvDetik < 10 ? '0' + konvDetik : konvDetik
   return `${konvMenit}:${konvDetik}`;
 }
 

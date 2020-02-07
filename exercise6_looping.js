@@ -1,38 +1,38 @@
 console.log("1. Melakukan Looping Menggunakan While\n");
 
 console.log("LOOPING PERTAMA\n")
-var i=2;
-while (i<=20) {
+let i = 2;
+while (i < 21) {
   console.log(`${i} - I love coding`);
-  i+=2;
+  i += 2;
 }
 
 console.log("\nLOOPING KEDUA\n")
-var j=20;
-while (j>=2) {
+let j = 20;
+while (j > 1) {
   console.log(`${j} - I will become fullstack developer`);
-  j-=2;
+  j -= 2;
 }
 
 console.log("\n\n2. Melakukan Looping Menggunakan For\n");
 
 console.log("LOOPING PERTAMA\n");
 
-for (var k=1; k<=20; k++) {
-  console.log(`${k} - I love coding`);
+for (let i = 1; i < 21; i++) {
+  console.log(`${i} - I love coding`);
 }
 
 console.log("LOOPING KEDUA\n");
 
-for (var l=20; l>=1; l--) {
-  console.log(`${l} - I will become fullstack developer`);
+for (let i = 20; i > 0; i--) {
+  console.log(`${i} - I will become fullstack developer`);
 }
 
 console.log("\n\n3. Angka Ganjil dan Genap\n");
 
 console.log("GANJIL GENAP\n")
-for (var counter=1; counter<=100; counter++) {
-  if (counter%2==0) {
+for (let counter = 1; counter <= 100; counter++) {
+  if (counter % 2 === 0) {
     console.log(`${counter} - GENAP`);
   }
   else {
@@ -41,9 +41,9 @@ for (var counter=1; counter<=100; counter++) {
 }
 
 console.log("\nKELIPATAN 3")
-for (var counter2=1; counter2<=100; counter2+=2) {
-  if (counter2%3==0) {
-    console.log(`${counter2} kelipatan 3`)
+for (let counter = 1; counter <= 100; counter += 2) {
+  if (counter % 3 == 0) {
+    console.log(`${counter} kelipatan 3`)
   }
   else {
     console.log(' ');
@@ -51,9 +51,9 @@ for (var counter2=1; counter2<=100; counter2+=2) {
 }
 
 console.log("\n\nKELIPATAN 6")
-for (var counter3=1; counter3<=100; counter3+=5) {
-  if (counter3%6==0) {
-    console.log(`${counter3} KELIPATAN 6`)
+for (let counter = 1; counter <= 100; counter += 5) {
+  if (counter % 6 == 0) {
+    console.log(`${counter} KELIPATAN 6`)
   }
   else {
     console.log(' ');
@@ -61,14 +61,11 @@ for (var counter3=1; counter3<=100; counter3+=5) {
 }
 
 console.log("\n\nKELIPATAN 10")
-for (var counter4=1; counter4<=100; counter4+=9) {
-  if (counter4%10==0) {
-    console.log(`${counter4} KELIPATAN 10`)
+for (let counter = 1; counter <= 100; counter += 9) {
+  if (counter % 10 == 0) {
+    console.log(`${counter} KELIPATAN 10`)
   }
   else {
     console.log(' ');
   }
 }
-
-
-

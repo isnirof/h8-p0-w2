@@ -1,22 +1,18 @@
 console.log('Logic Challenge - X dan O\n\n')
 function xo(str) {
-  var x=0;
-  var o=0;
-  for (i=0; i<str.length; i++) {
-    if(str[i]=='x') {
-      x++;
+  let balance = 0
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == 'x') {
+      balance++
     }
-    else if (str[i]=='o'){
-      o++;
+    else {
+      balance--
     }
   }
-
-  if (x==o) {
-    return true;
+  if (balance) {
+    return false
   }
-  else {
-    return false;
-  }
+  return true
 }
 
 // TEST CASES
